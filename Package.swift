@@ -21,7 +21,7 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .target(
       name: "Logger",
-      dependencies: ["ApplicationKey", "Logging"]),
+      dependencies: ["ApplicationKey", "swift-log"]),
     .testTarget(
       name: "LoggerTests",
       dependencies: ["Logger"]),
